@@ -14,7 +14,7 @@ info:
     After finding the user, the Web UI claims a user by making PUT requests to "/users/id/{userId}/claim" and "/users/id/{userId}" to associate the user with Cognito's identity id.
 
   license: 
-    url: https://github.com/aws-samples/retail-demo-store/blob/master/LICENSE
+    url: https://github.com/MichaelXCChens/retail-demo-store/blob/master/LICENSE
     name: MIT No Attribution (MIT-0)
 
 tags:

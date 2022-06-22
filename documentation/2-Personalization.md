@@ -87,7 +87,7 @@ You can also see personalized ranking in product search results. That is, if you
 
 ## Event Tracking
 
-The following semantic interaction event types are instrumented in the Retail Demo Store web user interface. Each time a user (anonymous or known) performs one the following actions, an [event is sent](https://github.com/aws-samples/retail-demo-store/blob/master/src/web-ui/src/analytics/AnalyticsHandler.js) to both Amazon Pinpoint (signed in only) and an Amazon Personalize Event Tracker (if configured).
+The following semantic interaction event types are instrumented in the Retail Demo Store web user interface. Each time a user (anonymous or known) performs one the following actions, an [event is sent](https://github.com/MichaelXCChens/retail-demo-store/blob/master/src/web-ui/src/analytics/AnalyticsHandler.js) to both Amazon Pinpoint (signed in only) and an Amazon Personalize Event Tracker (if configured).
 
 * Search – the user performed a product search
 * View – the user viewed details for a product

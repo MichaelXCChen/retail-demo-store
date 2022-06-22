@@ -6,7 +6,7 @@ info:
     The Products web service provides a RESTful API for creating and retrieving Products. The [Web UI](../../web-ui) makes calls to this service when a user goes through the checkout process or when viewing their Products.
 
   license: 
-    url: https://github.com/aws-samples/retail-demo-store/blob/master/LICENSE
+    url: https://github.com/MichaelXCChens/retail-demo-store/blob/master/LICENSE
     name: MIT No Attribution (MIT-0)
 
 tags:

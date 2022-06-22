@@ -98,7 +98,7 @@
           above - for the "collection" journey, the phone number will be recorded against the order)
           has opted in to receive promotional messages. For more information on how to ensure this,
           see the <em>"Two-Way SMS with Pinpoint"</em> section in the
-          <a href="https://github.com/aws-samples/retail-demo-store/blob/master/workshop/4-Messaging/4.1-Pinpoint.ipynb">
+          <a href="https://github.com/MichaelXCChens/retail-demo-store/blob/master/workshop/4-Messaging/4.1-Pinpoint.ipynb">
             Pinpoint messaging workshop.</a>
           In brief, you need to (in the USA):
         </p>

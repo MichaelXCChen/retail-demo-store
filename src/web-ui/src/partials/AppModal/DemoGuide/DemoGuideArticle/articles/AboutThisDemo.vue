@@ -4,7 +4,7 @@
 
     <p>
       The
-      <a href="https://github.com/aws-samples/retail-demo-store" target="_blank" rel="noreferrer noopener"
+      <a href="https://github.com/MichaelXCChens/retail-demo-store" target="_blank" rel="noreferrer noopener"
         >Retail Demo Store</a
       >
       is an open source solution which integrates Amazon Personalize, Amazon Pinpoint and Amazon Lex in a retail web
@@ -40,7 +40,7 @@
         is a single page application built using responsive web design frameworks and techniques, producing a native
         app-like experience tailored to the user's device. See the
         <a
-          href="https://github.com/aws-samples/retail-demo-store/tree/master/workshop"
+          href="https://github.com/MichaelXCChens/retail-demo-store/tree/master/workshop"
           target="_blank"
           rel="noreferrer noopener"
           >workshops page</a

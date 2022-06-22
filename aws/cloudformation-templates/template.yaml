@@ -217,7 +217,7 @@ Parameters:
   GitHubUser:
     Type: String
     Description: Your GitHub username.
-    Default: aws-samples
+    Default: MichaelXCChens
 
   PreIndexElasticsearch:
     Type: String
@@ -279,7 +279,7 @@ Parameters:
   PinpointSMSLongCode:
     Type: String
     Description: >
-      A dedicated long code (i.e. a phone number) obtained for Amazon Pinpoint to send and receive messages at. Be sure to enable two way SMS for this long code using Pinpoint. Follow steps 2 and 3 in the Messaging workshop(https://github.com/aws-samples/retail-demo-store/blob/master/workshop/4-Messaging/4.1-Pinpoint.ipynb)
+      A dedicated long code (i.e. a phone number) obtained for Amazon Pinpoint to send and receive messages at. Be sure to enable two way SMS for this long code using Pinpoint. Follow steps 2 and 3 in the Messaging workshop(https://github.com/MichaelXCChens/retail-demo-store/blob/master/workshop/4-Messaging/4.1-Pinpoint.ipynb)
       to get a long code. This parameter only applies when 'Auto-Configure Pinpoint' is set to 'Yes'. Enter the number along with the country code and without any spaces or brackets. For Example: enter "+1XXXXXXXXXX" for a long code based in the United States.
 
   AmplitudeApiKey:

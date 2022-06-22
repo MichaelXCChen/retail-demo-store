@@ -44,7 +44,7 @@
             data-toggle="tooltip"
             data-placement="bottom"
             data-html="true"
-            title="<div class='mb-2'>This demo will enable to choose the primary interest which is highest weighted when producing personalized product recommendations. The second and third category are automatically selected for you and have lower impact on the product recommendations each shopper receives.</div><div><a href='https://github.com/aws-samples/retail-demo-store' target='_blank' rel='noopener noreferrer'>For more info, visit to the GitHub repository.</a></div>"
+            title="<div class='mb-2'>This demo will enable to choose the primary interest which is highest weighted when producing personalized product recommendations. The second and third category are automatically selected for you and have lower impact on the product recommendations each shopper receives.</div><div><a href='https://github.com/MichaelXCChens/retail-demo-store' target='_blank' rel='noopener noreferrer'>For more info, visit to the GitHub repository.</a></div>"
             ref="learnMore"
           >
             Learn more

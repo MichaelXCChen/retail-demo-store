@@ -60,7 +60,7 @@ Resources:
         Branch: !Ref GitHubBranch
         RepositoryUrl:  !Sub
         - 'https://github.com/${User}/retail-demo-store.git'
-        - { User: !If [ UseDefaultGitHubUser, 'aws-samples', !Ref GitHubUser ] }
+        - { User: !If [ UseDefaultGitHubUser, 'MichaelXCChen', !Ref GitHubUser ] }
   NotebookInstance:
     Type: AWS::SageMaker::NotebookInstance
     Properties:
