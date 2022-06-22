@@ -17,6 +17,7 @@
     "layer0:update": "npm i -D @layer0/cli@latest && npm i @layer0/core@latest @layer0/prefetch@latest @layer0/devtools@latest"
   },
   "dependencies": {
+    "@braze/web-sdk": "^4.0.4",
     "@mparticle/web-sdk": "^2.9.14-rc.1",
     "@optimizely/optimizely-sdk": "^4.9.1",
     "amplitude-js": "^5.8.0",
