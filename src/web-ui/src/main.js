@@ -11,7 +11,6 @@ import Amplitude from 'amplitude-js'
 import mParticle from '@mparticle/web-sdk';
 import AmplifyStore from '@/store/store';
 import VueGtag from "vue-gtag";
-import * as braze from "@braze/web-sdk";
 
 import './styles/tokens.css'
 
@@ -99,13 +98,6 @@ else {
   });
 }
 
-braze.initialize('6e6cb451-66f2-487f-a59a-2fab99358f61', {
-  baseUrl: "sdk.fra-01.braze.eu",
-  enableLogging: true
-});
-
-braze.automaticallyShowInAppMessages();
-
 // Set the configuration
 Auth.configure(amplifyConfig);
 Analytics.configure(amplifyConfig);
@@ -121,7 +113,6 @@ Auth.currentAuthenticatedUser()
   .then((user) => {
     logger.debug('Current Authenticated User Info:');
     logger.log(user);
-    braze.changeUser(user);
   })
   .catch(err => logger.debug(err))
 
@@ -145,5 +136,3 @@ new Vue({
   },
   render: h => h(App)
 }).$mount('#app')
-
-braze.openSession();

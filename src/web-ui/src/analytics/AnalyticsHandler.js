@@ -11,11 +11,13 @@ import { Analytics as AmplifyAnalytics } from '@aws-amplify/analytics';
 import Amplitude from 'amplitude-js'
 import { RepositoryFactory } from '@/repositories/RepositoryFactory'
 import optimizelySDK from '@optimizely/optimizely-sdk';
+import * as braze from "@braze/web-sdk";
 
 const RecommendationsRepository = RepositoryFactory.get('recommendations')
 const ProductsRepository = RepositoryFactory.get('products')
 
 export const AnalyticsHandler = {
+
     clearUser() {
         if (this.amplitudeEnabled()) {
             // Update Amplitude user
@@ -37,6 +39,20 @@ export const AnalyticsHandler = {
         if (!user) {
             return Promise.resolve()
         }
+
+        braze.initialize(
+            '6e6cb451-66f2-487f-a59a-2fab99358f61', 
+            {
+                baseUrl: "sdk.fra-01.braze.eu",
+                enableLogging: true
+            }
+        );
+
+        braze.automaticallyShowInAppMessages();
+
+        braze.changeUser(user);
+
+        braze.openSession();
 
         var promise
 
@@ -197,6 +213,7 @@ export const AnalyticsHandler = {
 
     userSignedUp(user) {
         if (user) {
+            braze.changeUser(user);
             AmplifyAnalytics.record({
                 name: 'UserSignedUp',
                 attributes: {
@@ -218,7 +235,12 @@ export const AnalyticsHandler = {
     },
 
     userSignedIn(user) {
+        
+        braze.changeUser(user);
+
         if (user) {
+            braze.changeUser(user);
+            
             AmplifyAnalytics.record({
                 name: 'UserSignedIn',
                 attributes: {
